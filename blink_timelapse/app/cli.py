@@ -78,4 +78,6 @@ def list_blink_cameras(ctx):
 
 
 if __name__ == "__main__":
-    blink_timelapse(auto_envar_prefix="BLINK")
+    blink_timelapse(
+        auto_envar_prefix="BLINK"
+    )  # pylint: disable=no-value-for-parameter

@@ -1,7 +1,5 @@
 import datetime
 
-from blink_timelapse.auth import blink_session
-
 
 def make_and_save_snapshot(blink, photo_directory, camera_name):
     camera = blink.cameras[camera_name]
