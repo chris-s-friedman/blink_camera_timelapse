@@ -1,3 +1,28 @@
+[build-system]
+requires = ["setuptools", "setuptools-scm"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "blink_timelapse"
+authors = [
+    { name = "WudderMelun Wudder", email = "blink_timelapse@wtrmlnwtr.dev" }
+]
+description = "Blink Camera Timelapse"
+readme = "README.md"
+requires-python = ">=3.7"
+dependencies = ["blinkpy", "click"]
+license = { file = "LICENSE" }
+dynamic = ["version"]
+
+[project.urls]
+repository = "https://github.com/chris-s-friedman/blink_camera_timelapse"
+
+[project.scripts]
+blink_timelapse = "blink_timelapse.app.cli:blink_timelapse"
+
+[tool.setuptools_scm]
+write_to = "blink_timelapse/_version.py"
+
 [tool.black]
 line-length = 80
 

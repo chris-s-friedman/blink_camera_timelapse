@@ -1,2 +1,3 @@
-# template-repo
-template repo
+# CLI to Take Timlapse Photos with Blink Cameras
+
+Instructions
